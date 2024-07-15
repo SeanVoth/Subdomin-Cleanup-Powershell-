@@ -19,13 +19,13 @@ Project consists of a simple Powershell script that will clean up a large list o
 
 <h2>Example of script </h2>
 
-If txt contains:
+- If txt contains:
 
 abc.google.com
 sdfjokbap.sadgjb.sdfaojn.net
 skjdfnb.wegubw.xyz
 
-After running the script, txt will contain:
+- After running the script, txt will contain:
 
 google.com
 sdfaojn.net
