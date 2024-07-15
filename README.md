@@ -1,4 +1,4 @@
-# Domain Cleanup
+# Subdomain Cleanup
 Cleans up a list of domains, removing TLD being blocked 
 
 
