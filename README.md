@@ -16,6 +16,21 @@ Project consists of a simple Powershell script that will clean up a large list o
 - <b>Windows 10</b>
 - <b>Windows 11</b>
 
+
+<h2>Example of script </h2>
+
+If txt contains:
+
+abc.google.com
+sdfjokbap.sadgjb.sdfaojn.net
+skjdfnb.wegubw.xyz
+
+After running the script, txt will contain:
+
+google.com
+sdfaojn.net
+wegubw.xyz
+
 <br />
 
 
