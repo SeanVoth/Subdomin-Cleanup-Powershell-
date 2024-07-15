@@ -1,0 +1,25 @@
+# Define the file path
+#make sure its an absulute path C:\.....
+$file = "URL_IOCs.txt"
+
+# Read the content of the input file
+$content = Get-Content -Path $file
+
+# Initialize an array to hold the modified lines
+$modifiedContent = @()
+
+# Regex pattern to match the TLD and SLD
+$pattern = '([a-zA-Z0-9-]+\.[a-zA-Z]{2,})$'
+
+# Process each line with the regex pattern
+foreach ($line in $content) {
+    if ($line -match $pattern) {
+        # Extract the matched TLD and SLD and add it to the array
+        $modifiedContent += $matches[1]
+    }
+}
+
+# Write the modified content back to the original file
+$modifiedContent | Set-Content -Path $file
+
+Write-Output "Processing complete. Modified content saved to $file"
